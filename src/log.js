@@ -24,7 +24,7 @@ class MultiLogger extends Logger {
 class FileLogger extends Logger {
     constructor(filename){
         super();
-        this.filename = filename;
+        this.filename = Date.now + filename;
         this.data = [];
     }
     log(type, ...arg){
